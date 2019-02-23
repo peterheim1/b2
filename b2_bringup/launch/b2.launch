@@ -1,0 +1,16 @@
+<launch>
+    <!-- start voice -->
+    <node name="voice" pkg="b2_bringup" type="action_voice.py"/>
+
+    <!-- start RC servos-->
+    <node name="arm_controller" pkg="b2_bringup" type="arm_driver.py">
+    <rosparam file="$(find b2_bringup)/config/arduino_params.yaml" command="load" />
+    </node>
+    
+    <!-- start dynamixels-->
+    <include file="$(find b2_bringup)/launch/dynamixels.launch"/>
+
+    
+
+     
+</launch>

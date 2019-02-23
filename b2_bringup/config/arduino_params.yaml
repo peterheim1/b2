@@ -1,0 +1,8 @@
+# For a direct USB cable connection, the port name is typically
+# /dev/ttyACM# where is # is a number such as 0, 1, 2, etc
+# For a wireless connection like XBee, the port is typically
+port: /dev/ttyACM0 # where # is a number such as 0, 1, 2, etc.
+
+#port: /dev/sensors/ftdi_A500CNMH
+baudRate: 115200
+joints: [left_j1_joint, left_j2_joint, left_j3_joint, left_j4_joint, left_j5_joint, left_j6_joint, left_gripper_finger_joint, head_pan_joint, head_tilt_joint, right_j1_joint, right_j2_joint, right_j3_joint, right_j4_joint, right_j5_joint, right_j6_joint, right_gripper_finger_joint]

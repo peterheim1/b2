@@ -1,0 +1,12 @@
+<launch>
+ 
+    
+
+    <node name="arm_controller" pkg="b2_bringup" type="arm_driver.py">
+    <rosparam file="$(find b2_bringup)/config/arduino_params.yaml" command="load" />
+    </node>
+    
+   
+
+     
+</launch>
